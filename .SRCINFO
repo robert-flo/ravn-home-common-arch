@@ -1,6 +1,6 @@
 pkgbase = ravn-home-common
 	pkgdesc = Capa comun de $HOME para la workstation ravn (shell, terminal, fcitx5, gtk, mpv)
-	pkgver = 0.1.0
+	pkgver = 0.1.1
 	pkgrel = 1
 	url = https://github.com/robert-flo/ravn-home-common
 	arch = any
@@ -13,7 +13,7 @@ pkgbase = ravn-home-common
 	optdepends = gtk4: soporte de aplicaciones GTK 4
 	optdepends = mpv: reproductor multimedia
 	options = !debug
-	source = ravn-home-common-0.1.0.tar.gz::https://github.com/robert-flo/ravn-home-common/archive/refs/tags/v0.1.0.tar.gz
-	sha256sums = ab361c2e553a086c3df8cb3c48d0f8e022110daeeb9c379dfddec4b5a33771e1
+	source = ravn-home-common-0.1.1.tar.gz::https://github.com/robert-flo/ravn-home-common/archive/refs/tags/v0.1.1.tar.gz
+	sha256sums = 113721b56fae0fe920b6337eda968c65f9e5e144a6e0374bd753909781bfa099
 
 pkgname = ravn-home-common

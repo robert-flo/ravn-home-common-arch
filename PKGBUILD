@@ -1,6 +1,6 @@
 # Maintainer: Roberto Flores <25asab015@ujmd.edu.sv>
 pkgname=ravn-home-common
-pkgver=0.1.0
+pkgver=0.1.1
 pkgrel=1
 pkgdesc='Capa comun de $HOME para la workstation ravn (shell, terminal, fcitx5, gtk, mpv)'
 arch=('any')
@@ -17,7 +17,7 @@ optdepends=(
   'mpv: reproductor multimedia'
 )
 source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/refs/tags/v${pkgver}.tar.gz")
-sha256sums=('ab361c2e553a086c3df8cb3c48d0f8e022110daeeb9c379dfddec4b5a33771e1')
+sha256sums=('113721b56fae0fe920b6337eda968c65f9e5e144a6e0374bd753909781bfa099')
 
 package() {
   local src="${srcdir}/${pkgname}-${pkgver}"
