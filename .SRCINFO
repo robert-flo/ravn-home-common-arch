@@ -13,7 +13,7 @@ pkgbase = ravn-home-common
 	optdepends = gtk4: soporte de aplicaciones GTK 4
 	optdepends = mpv: reproductor multimedia
 	options = !debug
-	source = ravn-home-common-0.1.1.tar.gz::https://github.com/robert-flo/ravn-home-common/archive/refs/tags/v0.1.1.tar.gz
-	sha256sums = 113721b56fae0fe920b6337eda968c65f9e5e144a6e0374bd753909781bfa099
+	source = ravn-home-common-0.1.1.tar.gz
+	sha256sums = 3cff83fc9041d08eef4be03f0f531ec7db8f334db9f0553ae288f2cae19f4261
 
 pkgname = ravn-home-common

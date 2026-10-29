@@ -16,8 +16,12 @@ optdepends=(
   'gtk4: soporte de aplicaciones GTK 4'
   'mpv: reproductor multimedia'
 )
-source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/refs/tags/v${pkgver}.tar.gz")
-sha256sums=('113721b56fae0fe920b6337eda968c65f9e5e144a6e0374bd753909781bfa099')
+# Fuente privada: ravn-home-common es un repo privado y la URL del archive
+# del tag da 404 sin credenciales. El tarball vendoreado (git archive
+# --prefix=${pkgname}-${pkgver}/ v${pkgver} | gzip -n) es la fuente del
+# paquete y es byte-igual al archive que GitHub sirve en la URL del tag.
+source=("${pkgname}-${pkgver}.tar.gz")
+sha256sums=('3cff83fc9041d08eef4be03f0f531ec7db8f334db9f0553ae288f2cae19f4261')
 
 package() {
   local src="${srcdir}/${pkgname}-${pkgver}"
