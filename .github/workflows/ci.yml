@@ -1,0 +1,25 @@
+name: ci
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install shellcheck
+        run: |
+          set -Eeuo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq shellcheck
+
+      - name: Validate offline test suites
+        run: |
+          set -Eeuo pipefail
+          bash -n PKGBUILD tests/*.sh
+          shellcheck -S warning tests/*.sh
+          bash tests/test-package-workflow.sh
